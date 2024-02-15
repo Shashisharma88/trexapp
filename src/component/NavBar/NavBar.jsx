@@ -447,10 +447,9 @@ export const NavBar = () => {
                   </Link>
                 </li>
 
-                <li>
-                  <Link
-                    href=""
-                    className={`flex items-center hover:text-[#FBA116] relative gap-[6px]  text-[#FFA800]`}>
+                <li className={`flex items-center hover:text-[#FBA116] relative gap-[6px]  text-[#FFA800]`}>
+              
+                    
                     
                      <div>
                      {isConnected ? (
@@ -471,7 +470,7 @@ export const NavBar = () => {
                         </button></>)}
                         {showModal && <ConnectModal onClose={handleCloseModal} m={showMessage} y={connectToUnisat} />}
                       </div>
-                  </Link>
+                  
                 </li>
               </ul>
             </div>
