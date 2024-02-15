@@ -449,13 +449,13 @@ export const NavBar = () => {
 
                 <li>
                   <Link
-                    href="#"
+                    href=""
                     className={`flex items-center hover:text-[#FBA116] relative gap-[6px]  text-[#FFA800]`}>
                     
                      <div>
                      {isConnected ? (
                           <div >
-                          <button className="border border-dashed border-[#ffffff]  px-2" onClick={handleConnection}>Disconnect</button>
+                          <button className="border border-dashed border-[#ffffff]  px-2" onClick={handleConnection}>{add.substring(0,5)}...{add.slice(-5)}</button>
                           </div>
                        
                       ) : (
